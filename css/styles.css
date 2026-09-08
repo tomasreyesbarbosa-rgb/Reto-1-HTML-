@@ -1,0 +1,25 @@
+﻿.testimonial-card {
+    width: 450px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+
+.testimonial-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+
+blockquote p {
+    font-style: italic;
+}
+
+
+.testimonial-author {
+    font-weight: bold;
+}
