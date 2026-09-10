@@ -1,25 +1,103 @@
-﻿.testimonial-card {
-    width: 450px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
     background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
 }
 
 
-.testimonial-card img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
+.calendar-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.calendar-container h1 {
+    text-align: center;
     margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: #333333;
 }
 
 
-blockquote p {
-    font-style: italic;
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    border: 2px solid #6c757d;
+    padding: 5px;
+    border-radius: 4px;
 }
 
 
-.testimonial-author {
+.day-header,
+.day-cell {
+    padding: 10px;
+}
+
+
+.day-header {
+    background-color: #f0f2f5;
     font-weight: bold;
+    text-align: center;
+    border: 2px solid #a0a8b0;
+}
+
+
+.day-cell {
+    border: 2px solid #a0a8b0;
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .calendar-container h1 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+
+    .day-header,
+    .day-cell {
+        padding: 8px 4px;
+        font-size: 0.85rem;
+    }
+
+    .calendar-grid {
+        gap: 3px;
+    }
+}
+
+
+
+@media (max-width: 380px) {
+    body {
+        padding: 15px 6px;
+    }
+
+    .calendar-container h1 {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+
+    .day-header,
+    .day-cell {
+        padding: 6px 2px;
+        font-size: 0.75rem;
+    }
+
+    .calendar-grid {
+        gap: 2px;
+    }
 }
